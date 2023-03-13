@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    text-align: right;
+    padding: 10px 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #111;
+}
+
+h2 {
+    position: absolute;
+    font-size: 20em; /* change this number to the text size you want*/
+    color: #111;
+}
+
+h2::before {
+    content: attr(data-text);
+    position: absolute;
+    color: #ffffff;
+    width: 350px;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 4px solid #ffffff;
+    animation: animate 8s linear infinite;
+    filter: drop-shadow(0 0 20px #ff0000);
+}
+
+a {
+    color: rgb(228, 41, 235); 
+}
+
+@keyframes animate {
+    0%, 10%, 100% {
+        width: 0;
+    }
+    70%, 90% {
+        width: 100%;
+    }
+}
