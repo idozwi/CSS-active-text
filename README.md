@@ -11,4 +11,4 @@ HOW TO USE:
 
 2. put them at the same folder
 
-3. have fun
+3. open the `index.html` file 
